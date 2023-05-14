@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  siu:
+    build:
+      dockerfile: ./Dockerfile
+    ports:
+      - "6080:80"
+    environment:
+      RESOLUTION: "1920x1080"
+    volumes:
+      - .:/root/siu/
